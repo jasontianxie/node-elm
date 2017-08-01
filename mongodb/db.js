@@ -5,7 +5,7 @@ import config from 'config-lite';
 mongoose.connect(config.url, {server:{auto_reconnect:true}});
 mongoose.Promise = global.Promise;
 
-const db = mongoose.connection;
+const db = mongoose.connection;//.connection属性表示的是与数据库的连接
 
 db.once('open' ,() => {
 	console.log('连接数据库成功')
