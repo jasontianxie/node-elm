@@ -3,7 +3,7 @@
 import mongoose from 'mongoose';
 import config from 'config-lite';
 mongoose.connect(config.url, {server:{auto_reconnect:true}});
-mongoose.Promise = global.Promise;mongoose.promise是es6风格的constructor。http://mongoosejs.com/docs/api.html#ES6Promise-js
+mongoose.Promise = global.Promise;//mongoose.promise是es6风格的constructor。http://mongoosejs.com/docs/api.html#ES6Promise-js
 
 const db = mongoose.connection;//.connection属性表示的是与数据库的连接
 
