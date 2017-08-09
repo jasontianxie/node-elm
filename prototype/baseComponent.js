@@ -3,7 +3,7 @@ import Ids from '../models/ids'
 import formidable from 'formidable'//用于解析客户端上传过来的表单，特别是文件上传
 import path from 'path'
 import fs from 'fs'
-import qiniu from 'qiniu'
+import qiniu from 'qiniu'//七牛云的sdk
 qiniu.conf.ACCESS_KEY = 'Ep714TDrVhrhZzV2VJJxDYgGHBAX-KmU1xV1SQdS';
 qiniu.conf.SECRET_KEY = 'XNIW2dNffPBdaAhvm9dadBlJ-H6yyCTIJLxNM_N6';
 
