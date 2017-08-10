@@ -6,7 +6,7 @@ import cookieParser from 'cookie-parser'
 import session from 'express-session';
 import connectMongo from 'connect-mongo';
 import winston from 'winston';
-import expressWinston from 'express-winston';
+import expressWinston from 'express-winston';//winston是一个nodejs的日志框架，使用express-winston之前要先安装并引入winston
 import path from 'path';
 import history from 'connect-history-api-fallback';
 import Statistic from './middlewares/statistic'
